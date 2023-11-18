@@ -1,0 +1,102 @@
+.error,
+.breed-select,
+.refresh-button,
+.refresh-wrapper {
+  display: none;
+}
+
+.breed-select {
+  margin-bottom: 20px;
+}
+
+.loader,
+.error {
+  font-weight: 900;
+}
+
+.error {
+  color: red;
+}
+
+.cat-img {
+  padding-right: 20px;
+}
+
+.cat-info-accent,
+.refresh-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.more-info-button,
+.refresh-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  background: #6e6d70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1),
+    inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5),
+    0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #dfdedf;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.more-info-button:focus,
+.refresh-button:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2),
+    0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+.section {
+  min-width: 200px;
+  width: 33.33%;
+  height: 360px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.loader-img {
+  border: 24px solid;
+  border-color: rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.25)
+    rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite;
+}
+
+@keyframes animloader {
+  0% {
+    border-color: rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.25)
+      rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.75);
+  }
+  33% {
+    border-color: rgba(255, 255, 255, 0.75) rgba(255, 255, 255, 0.15)
+      rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.35);
+  }
+  66% {
+    border-color: rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.75)
+      rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.25);
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.35)
+      rgba(255, 255, 255, 0.75) rgba(255, 255, 255, 0.15);
+  }
+}

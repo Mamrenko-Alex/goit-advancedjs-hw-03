@@ -24,13 +24,13 @@ export function fetchBreeds() {
 
 // Функція для виконання HTTP-запиту за інформацією про кота за ідентифікатором породи
 export function fetchCatByBreed(breedId) {
-  return new Promise((resolve, reject) => {
-    axios.get(`https://api.thecatapi.com/v1/images/search?breed_ids=${breedId}`)
-        .then(response => {
-            resolve(response.data[0]);
-      })
-      .catch(error => {
-        reject(error);
-      });
-  });
+    return new Promise((resolve, reject) => {
+        axios.get(`https://api.thecatapi.com/v1/images/search?breed_ids=${breedId}`)
+            .then(response => {
+                resolve(response.data[0]);
+            })
+            .catch(error => {
+            reject(error);
+            });
+        });
 }
