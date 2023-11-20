@@ -39,6 +39,11 @@ elements.breedSelect.addEventListener('change', clickHandler)
 
 function clickHandler() {
     const selectedId = elements.breedSelect.value;
+    console.log(selectedId);
+    if (selectedId === '0') {
+        location.href = './index.html';
+        return
+    }
     elements.loaderText.style.display = 'block';
     elements.catInfoSection.style.display = 'none';
     elements.breedSelect.style.display = 'none';
