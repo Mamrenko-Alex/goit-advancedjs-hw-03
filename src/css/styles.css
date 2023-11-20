@@ -9,6 +9,7 @@
 @import url('./header.css');
 @import url('./index.css');
 @import url('./custom-select.css');
+@import url('./custom-loader.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
