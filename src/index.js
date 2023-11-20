@@ -11,10 +11,9 @@ const elements = {
 }
 
 elements.refreshButton.style.display = 'none';
-
+            
 fetchBreeds()
     .then(breeds => {
-        // elements.loaderText.style.display = 'block';
         breeds.forEach(breed => {
             const option = document.createElement('option');
             option.value = breed.id;
@@ -29,9 +28,9 @@ fetchBreeds()
         elements.loaderText.style.display = 'none';
         elements.breedSelect.style.display = 'none';
         iziToast.error({
-          error: 'Error',
-          title: `Error`,
-          message: `❌ Oops! Something went wrong! Try reloading the page!`,
+            error: 'Error',
+            title: `Error`,
+            message: `❌ Oops! Something went wrong! Try reloading the page!`,
         })
         elements.refreshButton.style.display = 'block';
     });
