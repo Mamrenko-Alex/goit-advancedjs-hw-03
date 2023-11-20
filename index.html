@@ -8,16 +8,33 @@
     <script type="module" crossorigin src="/goit-advancedjs-hw-03/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-03/assets/vendor-2dcf4ad5.js">
     <link rel="stylesheet" href="/goit-advancedjs-hw-03/assets/vendor-e5212ee8.css">
-    <link rel="stylesheet" href="/goit-advancedjs-hw-03/assets/index-2d08c024.css">
+    <link rel="stylesheet" href="/goit-advancedjs-hw-03/assets/index-720ea5a9.css">
   </head>
   <body>
     <div class="custom-select" style="width: 200px">
       <select class="breed-select">
-        <option value="0">Choise the cat</option>
+        <option value="" class="first-presentation">Choise the cat</option>
       </select>
     </div>
-    <!-- <span class="loader-img"></span> -->
-    <p class="loader">Loading data, please wait...</p>
+
+    <div class="loader">
+      <div class="loading-cat">
+        <div class="body"></div>
+        <div class="head">
+          <div class="face"></div>
+        </div>
+        <div class="foot">
+          <div class="tummy-end"></div>
+          <div class="bottom"></div>
+          <div class="legs left"></div>
+          <div class="legs right"></div>
+        </div>
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+
+    <!-- <p class="loader">Loading data, please wait...</p> -->
     <p class="error">Oops! Something went wrong! Try reloading the page!</p>
     <div class="cat-info"></div>
     <div class="refresh-wrapper">
